@@ -9,7 +9,7 @@ import collections
 
 
 def main():
-  df = pd.read_csv(os.path.join(os.path.pardir,'data','speeches.csv'))
+  df = pd.read_csv(os.path.join(os.path.pardir,'data','speeches_selected.csv'))
   all_speeches = collections.defaultdict(list)
   for index, row in df.iterrows():
     candidate = row['candidate']
