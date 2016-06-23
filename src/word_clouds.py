@@ -42,8 +42,11 @@ def main():
       extra_words_exclude = f.read().splitlines()
     exclude.extend(extra_words_exclude)
 
+  exclude = set(exclude)
   most_common_words_of_all_candidates = set()
   for candidate in candidates:
+    # add candidate herself to exclude and at the end remove
+    exclude.add(candidate)
     input_directory = os.path.join(os.path.pardir, 'data', candidate)
     input_file = os.path.join(input_directory, 'all_speeches.txt')
 
@@ -72,6 +75,8 @@ def main():
     output_file = os.path.join(args.clouds_dir, candidate + '_words_cloud_scaled.pdf')
     plt.savefig(output_file)
     #plt.show()
+    # remove candiate herself from exclude list before we moved to other candidates
+    exclude.remove(candidate)
 
   with open(args.most_common, "w") as myfile:
     for word in most_common_words_of_all_candidates:

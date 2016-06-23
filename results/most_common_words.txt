@@ -1,5 +1,4 @@
 Most common words for clinton:
-clinton: 1047
 people: 908
 president: 415
 american: 316
@@ -29,6 +28,7 @@ rose: 137
 world: 135
 gun: 133
 iran: 128
+system: 124
 *************************
 Most common words for sanders:
 people: 665
@@ -43,7 +43,6 @@ united: 168
 political: 152
 worker: 148
 president: 147
-sanders: 147
 world: 142
 street: 139
 system: 134
@@ -61,6 +60,7 @@ nation: 101
 wealth: 99
 families: 95
 change: 95
+believe: 94
 *************************
 Most common words for martin:
 american: 209
@@ -131,7 +131,6 @@ people: 75
 country: 59
 american: 55
 america: 50
-rubio: 47
 president: 34
 nation: 28
 job: 27
@@ -157,6 +156,7 @@ security: 13
 economy: 13
 story: 13
 military: 12
+left: 12
 *************************
 Most common words for kasich:
 people: 75
@@ -290,7 +290,6 @@ Most common words for fiorina:
 government: 3
 believe: 3
 citizens: 3
-fiorina: 2
 president: 2
 reimagine: 2
 politics: 2
@@ -305,10 +304,10 @@ candidacy: 1
 leading: 1
 fix: 1
 expectations: 1
-forward: 1
+founders: 1
 corruption: 1
 empower: 1
-founders: 1
+forward: 1
 egos: 1
 lowered: 1
 vitriol: 1
@@ -317,6 +316,7 @@ sound: 1
 television: 1
 join: 1
 remote: 1
+announcing: 1
 *************************
 Most common words for paul:
 people: 44
@@ -359,7 +359,6 @@ love: 353
 deal: 349
 million: 334
 win: 325
-trump: 321
 job: 285
 believe: 280
 world: 257
@@ -381,4 +380,5 @@ build: 153
 person: 149
 remember: 148
 incredible: 147
+amazing: 142
 *************************
