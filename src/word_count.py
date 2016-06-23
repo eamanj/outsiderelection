@@ -77,7 +77,7 @@ def main():
     #print stats.entropy(overall_hist, qk=clinton_hist, base=None)
     #print stats.entropy(overall_hist, qk=sanders_hist, base=None)
 if __name__ == '__main__':
-    #main2('gender')
+    main2('gender')
     main2('money')
      
     
