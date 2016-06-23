@@ -44,7 +44,7 @@ if __name__ == '__main__':
     #chafee = 'http://www.presidency.ucsb.edu/2016_election_speeches.php?candidate=113&campaign=2016CHAFEE&doctype=5000',
     ted_cruz = 'http://www.presidency.ucsb.edu/2016_election_speeches.php?candidate=103&campaign=2016CRUZ&doctype=5000',
     robio = 'http://www.presidency.ucsb.edu/2016_election_speeches.php?candidate=105&campaign=2016RUBIO&doctype=5000',
-    kasich = 'http://www.presidency.ucsb.edu/2016_election_speeches.php?candidate=105&campaign=2016RUBIO&doctype=5000',
+    kasich = 'http://www.presidency.ucsb.edu/2016_election_speeches.php?candidate=114&campaign=2016KASICH&doctype=5000',
     bush = 'http://www.presidency.ucsb.edu/2016_election_speeches.php?candidate=101&campaign=2016BUSH&doctype=5000',
     #webb = 'http://www.presidency.ucsb.edu/2016_election_speeches.php?candidate=118&campaign=2016WEBB&doctype=5000',
     carson = 'http://www.presidency.ucsb.edu/2016_election_speeches.php?candidate=108&campaign=2016CARSON&doctype=5000',
