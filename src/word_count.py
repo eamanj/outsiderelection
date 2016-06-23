@@ -25,6 +25,12 @@ def get_dict(typ):
         words = ['damn','shit','fuck','bitch','asshole', 'faggot', 'darn', 'cunt', 'motherfucker', 'gosh'\
                  'crap', 'piss', 'dick', 'cock', 'fag', 'pussy', 'bastard', 'slut', 'douche', 'bastard', \
                  'bloody', 'bugger', 'bollocks', 'arsehole' ]
+    if typ=='government':
+        words =  ['government','governments', 'system', 'white house', 'capitol','congress','senate','senates','house of representatives', 'congressional']
+    if typ=='politician':
+        words = ['politician','politicians']
+    if typ=='change':
+        words = ['change' ]
     return words
 
 
@@ -117,6 +123,7 @@ if __name__ == '__main__':
     main2(df,'swear',csvwriter,source)
     main2(df,'other_countries_immigrants',csvwriter,source)
     main2(df,'race',csvwriter,source)
+    main2(df,'government',csvwriter,source)
     mean_file.close()
      
     
