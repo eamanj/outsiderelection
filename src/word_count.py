@@ -10,19 +10,23 @@ import matplotlib.pylab as plt
 
 def get_dict(typ):
     words = None
+    
     if typ=='gender':
-        words =  ['men','man','male','boy','guy','husband','father','son','sir','gentleman',\
-                'women','women','female','wife','girl','mother']
+        words =  ['men','man','male','boy','guy','husband','father','son','sir', 'glass ceiling'\
+                'woman','women','female','wife','girl','mother', 'feminist', 'male', 'patriarchy'\
+                  'maternity', 'paternity', 'parental']
     if typ=='money':
-        words = ['wallstreet','pac','money','donation','donations','doner','doners','finance','fec']
+        words = ['wall street', 'wallstreet','pac','money','donation','donations','doner',\
+                 'doners','finance','fec', 'bank', 'banker', 'rich', 'poor', 'income', 'salary']
     if typ=='race':
         words = ['black','white','hispanic','asian','african american', 'caucasian',\
                  'ethnicity', 'native american', 'ethnic minority', 'brown people', 'ethnic']
     if typ=='other_countries_immigrants':
-        words = ['mexico','china','mexican','chinese','cuba', 'korea', 'UK', 'europe', 'finland', 'norway'\
-                 'canada', 'foreigners', 'immigrants', 'immigration', 'foreign', 'asia', 'south america' ]
+        words = ['mexico','china','mexican','chinese','cuba', 'korea', 'UK', 'europe', 'finland', 'norway',\
+                 'canada', 'foreigners', 'immigrants', 'immigration', 'foreign', 'asia', 'south america'\
+                 , 'middle east', 'arab', 'muslim', 'muslims', 'terrorism', 'islam']
     if typ=='swear':
-        words = ['damn','shit','fuck','bitch','asshole', 'faggot', 'darn', 'cunt', 'motherfucker', 'gosh'\
+        words = ['damn','shit','fuck','bitch','asshole', 'faggot', 'darn', 'cunt', 'motherfucker',\
                  'crap', 'piss', 'dick', 'cock', 'fag', 'pussy', 'bastard', 'slut', 'douche', 'bastard', \
                  'bloody', 'bugger', 'bollocks', 'arsehole' ]
     if typ=='government':
