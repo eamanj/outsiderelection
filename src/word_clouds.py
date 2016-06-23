@@ -1,8 +1,6 @@
 #!/usr/bin/env python2
 """
-Minimal Example
-===============
-Generating a square wordcloud from the US constitution using default arguments.
+python word_clouds.py -c ./data/custom_exclude.txt ./data/check_whether_to_exlcude.txt ../plots/word_clouds/
 """
 
 from wordcloud import WordCloud
@@ -15,6 +13,8 @@ import matplotlib.pyplot as plt
 parser = argparse.ArgumentParser(description="")
 parser.add_argument("most_common",
                     help="write list of most common words here")
+parser.add_argument("clouds_dir",
+                    help="write the clouds in this dir")
 parser.add_argument("-c" , "--custom_exclude", dest="custom_exclude", default='',
                     help="custom list of words to exclude")
 args = parser.parse_args()
@@ -46,7 +46,6 @@ def main():
   for candidate in candidates:
     input_directory = os.path.join(os.path.pardir, 'data', candidate)
     input_file = os.path.join(input_directory, 'all_speeches.txt')
-    output_directory = os.path.join(os.path.pardir, 'plots')
 
     # Read the whole text.
     text = open(input_file).read().lower()
@@ -61,7 +60,7 @@ def main():
     # the matplotlib way:
     plt.imshow(wordcloud)
     plt.axis("off")
-    output_file = os.path.join(output_directory, candidate + '_words_cloud.pdf')
+    output_file = os.path.join(args.clouds_dir, candidate + '_words_cloud.pdf')
     plt.savefig(output_file)
 
     # take relative word frequencies into account, lower max_font_size
@@ -70,7 +69,7 @@ def main():
     plt.figure()
     plt.imshow(wordcloud)
     plt.axis("off")
-    output_file = os.path.join(output_directory, candidate + '_words_cloud_scaled.pdf')
+    output_file = os.path.join(args.clouds_dir, candidate + '_words_cloud_scaled.pdf')
     plt.savefig(output_file)
     #plt.show()
 
