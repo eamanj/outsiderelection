@@ -1,13 +1,7 @@
 Most common words for clinton:
-people: 908
 president: 415
-american: 316
-question: 302
-country: 277
-yes: 241
 republican: 228
 care: 221
-secretary: 220
 campaign: 205
 job: 200
 help: 196
@@ -21,7 +15,6 @@ kid: 153
 sanders: 152
 health: 151
 trying: 147
-america: 143
 economy: 140
 matthews: 138
 rose: 137
@@ -29,17 +22,19 @@ world: 135
 gun: 133
 iran: 128
 system: 124
+able: 123
+debate: 122
+money: 120
+pay: 119
+women: 119
+government: 117
+deal: 117
 *************************
 Most common words for sanders:
-people: 665
-country: 444
-american: 320
 million: 220
-america: 201
 job: 190
 percent: 184
 campaign: 177
-united: 168
 political: 152
 worker: 148
 president: 147
@@ -61,17 +56,17 @@ wealth: 99
 families: 95
 change: 95
 believe: 94
+middle: 93
+billionaire: 87
+economic: 86
+major: 86
+republican: 82
 *************************
 Most common words for martin:
-american: 209
-people: 157
-country: 133
 nation: 82
-america: 74
 action: 71
 economy: 69
 security: 59
-united: 57
 world: 55
 president: 53
 national: 52
@@ -93,22 +88,22 @@ opportunity: 34
 challenge: 34
 city: 33
 change: 33
+public: 32
+believe: 32
+street: 31
+law: 31
+future: 31
 *************************
 Most common words for ted_cruz:
-america: 60
 president: 51
-people: 47
 imagine: 44
-american: 44
 israel: 40
 nation: 30
-country: 29
 million: 27
 world: 27
 stand: 26
 conservative: 24
 government: 23
-united: 22
 liberty: 21
 law: 20
 candidate: 20
@@ -124,13 +119,14 @@ islamic: 17
 radical: 17
 federal: 16
 stood: 16
-question: 16
+terrorist: 16
+campaign: 15
+deal: 15
+senate: 15
+house: 15
+military: 14
 *************************
 Most common words for rubio:
-people: 75
-country: 59
-american: 55
-america: 50
 president: 34
 nation: 28
 job: 27
@@ -148,7 +144,6 @@ future: 17
 law: 16
 iran: 15
 life: 14
-united: 14
 system: 14
 school: 13
 security: 13
@@ -157,49 +152,49 @@ economy: 13
 story: 13
 military: 12
 left: 12
+election: 12
+father: 12
+change: 12
+live: 12
+term: 12
 *************************
 Most common words for kasich:
-people: 75
-country: 59
-american: 55
-america: 50
-rubio: 47
-president: 34
-nation: 28
-job: 27
-world: 25
-generation: 24
-english: 24
-children: 23
-believe: 23
-issue: 22
-history: 19
-republican: 19
-senator: 18
-parents: 18
-future: 17
-law: 16
-iran: 15
-life: 14
-united: 14
-system: 14
-school: 13
-security: 13
-21st: 13
-economy: 13
-story: 13
-military: 12
+israel: 35
+allies: 25
+world: 20
+value: 18
+security: 16
+isis: 16
+friend: 13
+live: 12
+threat: 12
+believe: 12
+support: 12
+international: 12
+military: 11
+course: 10
+syria: 10
+attack: 10
+iran: 9
+national: 9
+nuclear: 9
+nato: 9
+jewish: 9
+regional: 8
+china: 8
+effort: 8
+provide: 8
+deal: 8
+force: 7
+iraq: 7
+defeat: 7
+russia: 7
 *************************
 Most common words for bush:
 president: 68
-people: 55
-american: 50
 force: 43
 isis: 35
 tax: 35
-america: 34
-united: 31
-country: 30
 world: 30
 military: 29
 florida: 27
@@ -221,9 +216,13 @@ syria: 17
 live: 17
 friend: 17
 terrorist: 17
+effort: 16
+iraq: 16
+challenge: 16
+call: 15
+america's: 15
 *************************
 Most common words for carson:
-people: 39
 believe: 12
 nation: 11
 rate: 10
@@ -232,10 +231,8 @@ experience: 8
 god: 7
 care: 7
 trillion: 7
-country: 7
 dollar: 6
 able: 6
-america: 6
 life: 6
 money: 6
 business: 6
@@ -253,17 +250,16 @@ remember: 4
 fix: 4
 quarter: 4
 listen: 4
+bring: 4
+dependent: 4
+probably: 4
 *************************
 Most common words for chris:
-america: 24
-country: 23
-people: 19
 world: 15
 children: 11
 president: 11
 lead: 11
 truth: 10
-american: 10
 family: 9
 job: 9
 governor: 9
@@ -283,8 +279,12 @@ father: 5
 strong: 5
 love: 5
 live: 5
-united: 5
 six: 5
+office: 5
+school: 5
+reason: 5
+system: 5
+anxiety: 5
 *************************
 Most common words for fiorina:
 government: 3
@@ -319,21 +319,16 @@ remote: 1
 announcing: 1
 *************************
 Most common words for paul:
-people: 44
-america: 35
-american: 28
 president: 24
 home: 24
 bill: 20
 party: 19
 defend: 19
 amendment: 18
-country: 17
 government: 16
 help: 15
 republican: 15
 poor: 15
-question: 14
 tax: 14
 message: 14
 isis: 14
@@ -349,10 +344,13 @@ live: 11
 unknown: 11
 speaker: 11
 freedom: 11
+congress: 11
+house: 10
+record: 10
+bring: 9
+job: 9
 *************************
 Most common words for trump:
-people: 1505
-country: 555
 money: 439
 guy: 377
 love: 353
@@ -369,7 +367,6 @@ poll: 210
 nice: 187
 care: 186
 bad: 183
-america: 183
 mexico: 176
 trade: 166
 iowa: 162
@@ -381,4 +378,7 @@ person: 149
 remember: 148
 incredible: 147
 amazing: 142
+probably: 140
+tremendous: 136
+maybe: 134
 *************************
