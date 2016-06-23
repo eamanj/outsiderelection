@@ -39,7 +39,7 @@ def main():
   exclude = stopwords.words('english')
   if args.custom_exclude:
     with open(args.custom_exclude) as f:
-      extra_words_exclude = f.readlines()
+      extra_words_exclude = f.read().splitlines()
     exclude.extend(extra_words_exclude)
 
   most_common_words_of_all_candidates = set()
