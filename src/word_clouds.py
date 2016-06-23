@@ -53,7 +53,7 @@ def main():
     # Generate a word cloud image
     wordcloud = WordCloud(width=1000, height=600, stopwords=exclude).generate(text)
     wordcounts = WordCloud(stopwords=exclude).process_text(text)
-    most_common = print_word_counts(candidate, wordcounts, 20)
+    most_common = print_word_counts(candidate, wordcounts, 30)
     most_common_words_of_all_candidates = most_common_words_of_all_candidates.union(most_common)
 
     # Display the generated image:
