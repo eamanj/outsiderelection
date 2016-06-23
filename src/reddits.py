@@ -9,7 +9,7 @@ from secret_key import client_id
 redit = praw.Reddit(user_agent=client_id)
 
 def get_text(subreddit_name):
-    submissions = redit.get_subreddit(subreddit_name).get_top_from_all(limit=1)
+    submissions = redit.get_subreddit(subreddit_name).get_top_from_all(limit=None)
     sub_objs = [x for x in submissions] 
     data = []
     for x in sub_objs: 

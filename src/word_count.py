@@ -12,8 +12,8 @@ def get_dict(typ):
     words = None
     
     if typ=='gender':
-        words =  ['men','man','male','boy','guy','husband','father','son','sir', 'glass ceiling'\
-                'woman','women','female','wife','girl','mother', 'feminist', 'male', 'patriarchy'\
+        words =  ['men','man','male','boy','guy','husband','father','son','sir', 'glass ceiling',\
+                'woman','women','female','wife','girl','mother', 'feminist', 'male', 'patriarchy',\
                   'maternity', 'paternity', 'parental']
     if typ=='money':
         words = ['wall street', 'wallstreet','pac','money','donation','donations','doner',\
@@ -23,8 +23,8 @@ def get_dict(typ):
                  'ethnicity', 'native american', 'ethnic minority', 'brown people', 'ethnic']
     if typ=='other_countries_immigrants':
         words = ['mexico','china','mexican','chinese','cuba', 'korea', 'UK', 'europe', 'finland', 'norway',\
-                 'canada', 'foreigners', 'immigrants', 'immigration', 'foreign', 'asia', 'south america'\
-                 , 'middle east', 'arab', 'muslim', 'muslims', 'terrorism', 'islam']
+                 'canada', 'foreigners', 'immigrants', 'immigration', 'foreign', 'asia', 'south america',\
+                  'middle east', 'arab', 'muslim', 'muslims', 'terrorism', 'islam']
     if typ=='swear':
         words = ['damn','shit','fuck','bitch','asshole', 'faggot', 'darn', 'cunt', 'motherfucker',\
                  'crap', 'piss', 'dick', 'cock', 'fag', 'pussy', 'bastard', 'slut', 'douche', 'bastard', \
@@ -36,8 +36,6 @@ def get_dict(typ):
     if typ=='change':
         words = ['change' ]
     return words
-
-
 def compute_dist(df,word_dict):
     text_list = df['text'].values
     #text = ''.join(temp)
@@ -130,4 +128,3 @@ if __name__ == '__main__':
     main2(df,'government',csvwriter,source)
     mean_file.close()
      
-    
