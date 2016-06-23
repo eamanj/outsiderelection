@@ -42,34 +42,38 @@ def compute_dist(df,word_dict):
 def candidate_record(df,name):
     return df[df.candidate==name]
 
-def plot(hist,fname,xlim_right=None):
+def plot(hist,source,fname,xlim_right=None):
     fig,ax = plt.subplots()
     ax.hist(hist)
     if xlim_right:
         ax.set_xlim(right=xlim_right)
-    plt.savefig(os.path.join(os.path.pardir,'plots',fname))
+    plt.savefig(os.path.join(os.path.pardir,'plots',source,fname))
     plt.close()
 
 
 def update_df(df,word_dict):
     for i,r in enumerate(df.iterrows()):
-        text = df.ix[i,'text'].lower()
+        idx = r[0]
+        text = df.ix[idx,'text'].lower()
         tl = float(len(text))
         temp = sum([text.count(keyword) for keyword in word_dict])
-        df.ix[i,'prob']  = temp/tl 
+        df.ix[idx,'prob']  = temp/tl 
     df['prob_zscore'] = stats.zscore(df['prob'])
     return df
 
-def main2(df, typ, csvwriter):
+def main2(df, typ, csvwriter,source):
+    print typ
     candidates = df.candidate.unique()
     
     word_dict = get_dict(typ)
     update_df(df,word_dict)
-    plot(df.prob_zscore,'overall_{0}.png'.format(typ))
+    plot(df.prob_zscore,source,'overall_{0}.png'.format(typ))
+    row =  ["overal",typ,np.mean(df.prob_zscore)]
+    csvwriter.writerow(row)
     for cand_name in candidates:
         cand_hist = df[df.candidate==cand_name]['prob_zscore']
         mean = np.mean(cand_hist)
-        plot(cand_hist.values,'{0}_{1}.png'.format(cand_name,typ))
+        plot(cand_hist.values,source,'{0}_{1}.png'.format(cand_name,typ))
         row =  [cand_name,typ,mean]
         csvwriter.writerow(row)
 
@@ -95,15 +99,24 @@ def main():
     #print stats.entropy(overall_hist, qk=clinton_hist, base=None)
     #print stats.entropy(overall_hist, qk=sanders_hist, base=None)
 if __name__ == '__main__':
-    mean_file = open(os.path.join(os.path.pardir,'data','mean_file.txt'),'wb')
+    source = sys.argv[1]
+    mean_file = open(os.path.join(os.path.pardir,'data','{0}_mean_file.csv'.format(source)),'wb')
     csvwriter = csv.writer(mean_file)
     csvwriter.writerow(['candidate','dimention',',mean'])
-    df = pds.read_csv(os.path.join(os.path.pardir,'data','speeches_selected.csv'))
-     
-    main2(df,'gender', csvwriter)
-    main2(df,'money',csvwriter)
-    main2(df,'swear',csvwriter)
-    main2(df,'other_countries_immigrants',csvwriter)
+    if source =='speeches':
+        df = pds.read_csv(os.path.join(os.path.pardir,'data','speeches_selected.csv'))
+    elif source == 'facebook':
+        df = pds.read_csv(os.path.join(os.path.pardir,'data','facebook.csv'),na_values=['none',None])
+        df.dropna(inplace=True)
+        df.reindex()
+    else:
+        sys.exit('bad source!')
+
+    main2(df,'gender', csvwriter,source)
+    main2(df,'money',csvwriter,source)
+    main2(df,'swear',csvwriter,source)
+    main2(df,'other_countries_immigrants',csvwriter,source)
+    main2(df,'race',csvwriter,source)
     mean_file.close()
      
     
