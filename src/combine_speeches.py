@@ -20,9 +20,17 @@ def main():
     directory = os.path.join(os.path.pardir, 'data', candidate)
     if not os.path.isdir(directory):
       os.makedirs(directory)
+    
+    # write a single all speeches file
     with open(os.path.join(directory, 'all_speeches.txt'), "w") as myfile:
       for speech in speeches:
         myfile.write("%s\n" % speech)
+    
+    # write a file for each speech
+    for speech_num, speech in enumerate(speeches, start=1):
+      with open(os.path.join(directory, str(speech_num) + '.txt'), "w") as myfile:
+        myfile.write("%s" % speech)
+
 
 if __name__ == '__main__':
   main()
