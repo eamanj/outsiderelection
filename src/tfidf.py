@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 """
-python tfidf.py -c ./data/custom_exclude.txt ../results/most_common_words.txt ../results/word_scores.csv
+python tfidf.py -c ./data/custom_exclude.txt ../results/most_common_words.txt
 """
 
 from nltk.corpus import stopwords
@@ -15,8 +15,6 @@ import csv
 parser = argparse.ArgumentParser(description="")
 parser.add_argument("vocabulary",
         help="The file of vocabularies for which we will extract tfidf")
-parser.add_argument("output_file",
-        help="The output file containing word scores")
 parser.add_argument("-c" , "--custom_exclude", dest="custom_exclude", default='',
         help="custom list of words to exclude")
 parser.add_argument("-m", "--max_df", dest="max_df", type=float, default=0.85)
