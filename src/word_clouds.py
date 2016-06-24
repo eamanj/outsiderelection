@@ -27,7 +27,7 @@ def print_word_counts(candidate, word_counts, num_top):
   print 'Most common words for ' + candidate + ':'
   sorted_words = sorted(word_counts, key=operator.itemgetter(1), reverse=True)
   most_common = list()
-  for i in range(num_top):
+  for i in range(min(num_top, len(sorted_words))):
     print '{}: {}'.format(sorted_words[i][0], sorted_words[i][1])
     most_common.append(sorted_words[i][0])
   print '*************************'
@@ -56,7 +56,7 @@ def main():
     # Generate a word cloud image
     wordcloud = WordCloud(width=1000, height=600, stopwords=exclude).generate(text)
     wordcounts = WordCloud(stopwords=exclude).process_text(text)
-    most_common = print_word_counts(candidate, wordcounts, 35)
+    most_common = print_word_counts(candidate, wordcounts, 60)
     most_common_words_of_all_candidates = most_common_words_of_all_candidates.union(most_common)
 
     # Display the generated image:
