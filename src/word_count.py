@@ -7,7 +7,7 @@ import pandas as pds
 import scipy.stats as stats
 import matplotlib.pylab as plt
 
-
+from slangs import slangs
 def get_dict(typ):
     words = None
     
@@ -35,6 +35,8 @@ def get_dict(typ):
         words = ['politician','politicians']
     if typ=='change':
         words = ['change' ]
+    if typ=='slangs':
+        words = slangs
     return words
 def compute_dist(df,word_dict):
     text_list = df['text'].values
@@ -122,9 +124,10 @@ if __name__ == '__main__':
 
     main2(df,'gender', csvwriter,source)
     main2(df,'money',csvwriter,source)
-    main2(df,'swear',csvwriter,source)
+    #main2(df,'swear',csvwriter,source)
     main2(df,'other_countries_immigrants',csvwriter,source)
     main2(df,'race',csvwriter,source)
     main2(df,'government',csvwriter,source)
+    main2(df,'slangs',csvwriter,source)
     mean_file.close()
      
