@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 """
-python word_clouds.py -c ./data/custom_exclude.txt ./data/check_whether_to_exlcude.txt ../plots/word_clouds/
+python word_clouds.py -c ./data/custom_exclude.txt ../results/most_common_words.txt ../plots/word_clouds/ > ../results/most_common_words_with_count_by_candidates.txt
 """
 
 from wordcloud import WordCloud
