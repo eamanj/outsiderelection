@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 """
-python word_clouds.py -c ./data/custom_exclude.txt ../results/most_common_words.txt ../plots/word_clouds/ > ../results/most_common_words_with_count_by_candidates.txt
+python word_clouds.py -c ./data/custom_exclude.txt ../data ../results/most_common_words.txt ../plots/word_clouds/ > ../results/most_common_words_with_count_by_candidates.txt
 """
 
 from wordcloud import WordCloud
@@ -11,6 +11,8 @@ import operator
 import matplotlib.pyplot as plt
 
 parser = argparse.ArgumentParser(description="")
+parser.add_argument("input_dir",
+                    help="directory containing the speeches files")
 parser.add_argument("most_common",
                     help="write list of most common words here")
 parser.add_argument("clouds_dir",
@@ -47,7 +49,7 @@ def main():
   for candidate in candidates:
     # add candidate herself to exclude and at the end remove
     exclude.add(candidate)
-    input_directory = os.path.join(os.path.pardir, 'data', candidate)
+    input_directory = os.path.join(args.input_dir, candidate)
     input_file = os.path.join(input_directory, 'all_speeches.txt')
 
     # Read the whole text.
