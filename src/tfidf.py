@@ -71,26 +71,28 @@ def main():
     
     corpus_tf_idf = vect.fit_transform(corpus)
     features = np.array(vect.get_feature_names())
-    a = corpus_tf_idf.todense()
-    
-    ind = np.argsort(a)[::-1]
-    ind = ind[:,:100]
-    cand_str = defaultdict(str)
+    matrix = corpus_tf_idf.toarray()
+    print matrix.shape 
+    #ind = np.argsort(a)[::-1]
+    #ind = ind[:,:20]
+    #cand_str = defaultdict(str)
     #f = open(os.path.join(os.path.pardir,'data','tdidfs_top100.csv'),'wb')
     #csvwriter = csv.writer(f)
     #csvwriter.writerow(['candidate','text'])
+    topn = 100
     for candidate,ids in author_ids.iteritems():
         fpath = '../data/tfidf/{0}'.format(candidate)
         #os.mkdir(fpath)
         f = open('{0}/all_speeches.txt'.format(fpath),"wb")
         words = []
-        ids = np.array(ids) #row ids for current candidate
-        temp = ind[ids,:]  #extract those rows
-        for i in xrange(temp.shape[0]): #for  speech i
-            w = features[temp[i,:]] #extract top 100 words
-            print type(w.tolist())
-            print w.tolist()[0]
-            words.extend(w.tolist()[0])
+        for i in ids: #for  speech i
+            row = matrix[i,:]
+            sorted_ids = np.argsort(row)[::-1]
+            print row[sorted_ids[:5]]
+            w = features[sorted_ids[:topn]] #extract top 100 words
+            #print type(w.tolist())
+            print w.tolist()
+            words.extend(w.tolist())
 
         #print words
         cand_str =  " ".join(words)
