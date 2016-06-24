@@ -555,3 +555,5 @@ secretary
 united
 americans
 yes
+republican
+president
