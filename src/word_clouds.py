@@ -67,15 +67,17 @@ def main():
     plt.axis("off")
     output_file = os.path.join(args.clouds_dir, candidate + '_words_cloud.pdf')
     plt.savefig(output_file)
+    output_file = os.path.join(args.clouds_dir, candidate + '_words_cloud.png')
+    plt.savefig(output_file)
 
     # take relative word frequencies into account, lower max_font_size
-    wordcloud = WordCloud(width=1000, height=600, max_font_size=40, relative_scaling=.5,
-                          stopwords=exclude).generate(text)
-    plt.figure()
-    plt.imshow(wordcloud)
-    plt.axis("off")
-    output_file = os.path.join(args.clouds_dir, candidate + '_words_cloud_scaled.pdf')
-    plt.savefig(output_file)
+    #wordcloud = WordCloud(width=1000, height=600, max_font_size=40, relative_scaling=.5,
+    #                      stopwords=exclude).generate(text)
+    #plt.figure()
+    #plt.imshow(wordcloud)
+    #plt.axis("off")
+    #output_file = os.path.join(args.clouds_dir, candidate + '_words_cloud_scaled.pdf')
+    #plt.savefig(output_file)
     #plt.show()
     # remove candiate herself from exclude list before we moved to other candidates
     exclude.remove(candidate)

@@ -557,3 +557,5 @@ americans
 yes
 republican
 president
+senator
+campaign
