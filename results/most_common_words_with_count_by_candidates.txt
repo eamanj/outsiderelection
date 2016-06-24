@@ -1,6 +1,4 @@
 Most common words for clinton:
-president: 415
-republican: 228
 care: 221
 campaign: 205
 job: 200
@@ -20,6 +18,7 @@ matthews: 138
 rose: 137
 world: 135
 gun: 133
+republicans: 130
 iran: 128
 system: 124
 able: 123
@@ -399,6 +398,7 @@ short: 28
 expect: 28
 words: 28
 who's: 28
+afford: 27
 *************************
 Most common words for sanders:
 million: 220
@@ -407,7 +407,6 @@ percent: 184
 campaign: 177
 political: 152
 worker: 148
-president: 147
 world: 142
 street: 139
 system: 134
@@ -430,7 +429,6 @@ middle: 93
 billionaire: 87
 economic: 86
 major: 86
-republican: 82
 live: 81
 hour: 79
 financial: 74
@@ -495,8 +493,8 @@ unemployment: 45
 establishment: 45
 life: 44
 benefit: 44
-win: 44
 power: 44
+win: 44
 democracy: 44
 bottom: 43
 paid: 43
@@ -544,6 +542,7 @@ revolution: 33
 spend: 33
 break: 32
 seen: 32
+republicans: 32
 decision: 32
 policy: 32
 including: 32
@@ -648,9 +647,9 @@ moral: 22
 medical: 22
 deal: 22
 price: 22
-proud: 22
 massive: 22
 here's: 22
+proud: 22
 affordable: 22
 invest: 22
 citizenship: 22
@@ -801,6 +800,7 @@ behavior: 14
 comprehensive: 14
 moment: 14
 obviously: 14
+standing: 14
 *************************
 Most common words for martin:
 nation: 82
@@ -808,7 +808,6 @@ action: 71
 economy: 69
 security: 59
 world: 55
-president: 53
 national: 52
 job: 50
 life: 48
@@ -848,7 +847,6 @@ means: 26
 maryland: 26
 wall: 26
 global: 25
-republican: 25
 able: 25
 police: 25
 climate: 25
@@ -1148,9 +1146,9 @@ consequence: 7
 plan: 7
 individual: 7
 demand: 7
+win: 7
 success: 7
 race: 7
-win: 7
 apply: 7
 process: 7
 dad: 7
@@ -1203,9 +1201,10 @@ wealth: 6
 ensure: 6
 information: 6
 half: 6
+killed: 6
+anger: 6
 *************************
 Most common words for ted_cruz:
-president: 51
 imagine: 44
 israel: 40
 nation: 30
@@ -1221,7 +1220,6 @@ isis: 20
 iran: 20
 school: 18
 women: 18
-republican: 18
 amendment: 18
 leader: 18
 god: 17
@@ -1367,6 +1365,7 @@ days: 5
 hearing: 5
 letter: 5
 stop: 5
+republicans: 5
 child: 5
 opportunity: 5
 core: 5
@@ -1605,9 +1604,9 @@ khamenei: 3
 peace: 3
 required: 3
 code: 3
+race: 3
 *************************
 Most common words for rubio:
-president: 34
 nation: 28
 job: 27
 world: 25
@@ -1617,7 +1616,6 @@ children: 23
 believe: 23
 issue: 22
 history: 19
-republican: 19
 senator: 18
 parents: 18
 future: 17
@@ -1744,6 +1742,7 @@ days: 5
 industrial: 5
 bush: 5
 families: 5
+republicans: 5
 spread: 5
 remind: 5
 born: 5
@@ -1891,7 +1890,6 @@ earth: 3
 announce: 3
 fail: 3
 debt: 3
-strong: 3
 referendum: 3
 applied: 3
 east: 3
@@ -1907,7 +1905,6 @@ check: 3
 reality: 3
 whoever: 3
 finally: 3
-talked: 3
 cost: 3
 wait: 3
 retiree: 3
@@ -1944,6 +1941,7 @@ poor: 3
 includes: 3
 wife: 3
 stood: 3
+strong: 3
 experience: 3
 town: 3
 resources: 3
@@ -1958,6 +1956,7 @@ energy: 3
 health: 3
 extraordinary: 3
 threat: 3
+talked: 3
 embraced: 3
 passed: 3
 hotel: 3
@@ -2007,6 +2006,7 @@ paul: 3
 growth: 3
 literally: 3
 owe: 3
+buy: 3
 *************************
 Most common words for kasich:
 israel: 35
@@ -2066,7 +2066,6 @@ program: 5
 human: 5
 missile: 5
 challenge: 5
-president: 5
 weakness: 5
 defend: 5
 gordon: 5
@@ -2409,9 +2408,9 @@ concerned: 1
 acting: 1
 supported: 1
 behalf: 1
+lord: 1
 *************************
 Most common words for bush:
-president: 68
 force: 43
 isis: 35
 tax: 35
@@ -2679,7 +2678,6 @@ age: 5
 resources: 5
 giving: 5
 honor: 5
-republican: 5
 presidential: 5
 brought: 5
 nuclear: 5
@@ -2811,6 +2809,8 @@ obama's: 4
 expand: 4
 capabilities: 4
 citizen: 4
+lincoln: 4
+getting: 4
 *************************
 Most common words for carson:
 believe: 12
@@ -3115,7 +3115,6 @@ tries: 1
 abuse: 1
 designed: 1
 coming: 1
-president: 1
 law: 1
 wins: 1
 bugs: 1
@@ -3213,11 +3212,11 @@ merlen: 1
 rampant: 1
 obama: 1
 nathan: 1
+unfortunately: 1
 *************************
 Most common words for chris:
 world: 15
 children: 11
-president: 11
 lead: 11
 truth: 10
 family: 9
@@ -3474,7 +3473,6 @@ policy: 1
 happened: 1
 questions: 1
 front: 1
-republican: 1
 bigger: 1
 represents: 1
 term: 1
@@ -3615,12 +3613,13 @@ representative: 1
 spin: 1
 welcoming: 1
 ahead: 1
+unlike: 1
+playgrounds: 1
 *************************
 Most common words for fiorina:
 government: 3
 believe: 3
 citizens: 3
-president: 2
 reimagine: 2
 politics: 2
 political: 2
@@ -3658,7 +3657,6 @@ voice: 1
 hillary: 1
 *************************
 Most common words for paul:
-president: 24
 home: 24
 bill: 20
 party: 19
@@ -3666,7 +3664,6 @@ defend: 19
 amendment: 18
 government: 16
 help: 15
-republican: 15
 poor: 15
 tax: 14
 message: 14
@@ -3685,6 +3682,7 @@ speaker: 11
 freedom: 11
 congress: 11
 house: 10
+republicans: 10
 record: 10
 bring: 9
 job: 9
@@ -3789,6 +3787,7 @@ charge: 4
 sort: 4
 process: 4
 sense: 4
+court: 4
 remember: 4
 green: 4
 office: 4
@@ -3812,14 +3811,12 @@ defending: 4
 countries: 4
 reform: 4
 wasn't: 4
-court: 4
 defense: 4
 hours: 4
 senator: 4
 comes: 4
 couldn't: 4
 life: 4
-citizen: 4
 fund: 4
 taking: 4
 mistake: 4
@@ -3834,6 +3831,7 @@ islam: 4
 questions: 4
 revenue: 4
 disappointed: 4
+citizen: 4
 economic: 4
 business: 4
 ok: 4
@@ -4058,6 +4056,7 @@ zero: 2
 vienna: 2
 perspective: 2
 collecting: 2
+nominee: 2
 *************************
 Most common words for trump:
 money: 439
@@ -4071,7 +4070,6 @@ believe: 280
 world: 257
 china: 242
 wall: 223
-president: 213
 poll: 210
 nice: 187
 care: 186
@@ -4155,7 +4153,6 @@ times: 77
 heard: 77
 strong: 77
 leader: 77
-republican: 76
 ad: 75
 true: 74
 stop: 73
@@ -4328,6 +4325,7 @@ process: 38
 drug: 38
 example: 37
 fair: 37
+republicans: 37
 choice: 37
 raise: 37
 read: 37
@@ -4405,10 +4403,10 @@ politics: 31
 reporter: 30
 answer: 30
 mess: 30
+using: 30
 hey: 30
 wife: 30
 stage: 30
-using: 30
 cut: 30
 ones: 30
 stay: 30
@@ -4460,4 +4458,5 @@ impact: 26
 ivanka: 26
 set: 26
 governor: 26
+kid: 26
 *************************
