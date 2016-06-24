@@ -15,9 +15,11 @@ def get_dict(typ):
         words =  ['men','man','male','boy','guy','husband','father','son','sir', 'glass ceiling',\
                 'woman','women','female','wife','girl','mother', 'feminist', 'male', 'patriarchy',\
                   'maternity', 'paternity', 'parental']
+    if typ=='female':
+        words =  ['woman','women','female','wife','girl','mother', 'feminist',"children",'maternity', 'paternity', 'parental']
     if typ=='money':
         words = ['wall street', 'wallstreet','pac','money','donation','donations','doner',\
-                 'doners','finance','fec', 'bank', 'banker', 'rich', 'poor', 'income', 'salary']
+                 'doners','finance','fec', 'bank','banks'] 
     if typ=='race':
         words = ['black','white','hispanic','asian','african american', 'caucasian',\
                  'ethnicity', 'native american', 'ethnic minority', 'brown people', 'ethnic']
@@ -129,5 +131,6 @@ if __name__ == '__main__':
     main2(df,'race',csvwriter,source)
     main2(df,'government',csvwriter,source)
     main2(df,'slangs',csvwriter,source)
+    main2(df,'female',csvwriter,source)
     mean_file.close()
      

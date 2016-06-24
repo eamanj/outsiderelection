@@ -172,4 +172,10 @@ slangs = [
 "yup",
 "zip",
 "zap",
-"zapped"]
+"zapped",
+"guy",
+"amazing",
+"kid",
+"kids",
+"folks",
+"folk"]
