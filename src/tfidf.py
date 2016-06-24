@@ -1,5 +1,6 @@
 #!/usr/bin/env python2
 """
+python tfidf.py -c ./data/custom_exclude.txt ../results/most_common_words.txt ../results/word_scores.csv
 """
 
 from nltk.corpus import stopwords
